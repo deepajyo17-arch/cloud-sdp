@@ -1,0 +1,38 @@
+[
+  {
+    "timestamp": "2026-10-15T11:00:00Z",
+    "countryCode": "DEU",
+    "protoPayload": {
+      "serviceName": "compute.googleapis.com",
+      "methodName": "compute.instances.get",
+      "resourceName": "projects/corp-analytics-gcp/zones/europe-west3-a/instances/worker-01",
+      "authenticationInfo": {
+        "principalEmail": "sre-monitoring-sa@company.iam.gserviceaccount.com"
+      },
+      "requestMetadata": {
+        "callerIp": "198.51.100.12"
+      },
+      "status": {
+        "code": 0
+      }
+    }
+  },
+  {
+    "timestamp": "2026-10-15T23:50:00Z",
+    "countryCode": "IRN",
+    "protoPayload": {
+      "serviceName": "cloudresourcemanager.googleapis.com",
+      "methodName": "resourcemanager.projects.setIamPolicy",
+      "resourceName": "projects/corp-analytics-gcp",
+      "authenticationInfo": {
+        "principalEmail": "compromised-sa@corp-analytics-gcp.iam.gserviceaccount.com"
+      },
+      "requestMetadata": {
+        "callerIp": "5.253.204.12"
+      },
+      "status": {
+        "code": 0
+      }
+    }
+  }
+]

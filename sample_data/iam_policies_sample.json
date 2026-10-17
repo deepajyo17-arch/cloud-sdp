@@ -1,0 +1,57 @@
+[
+  {
+    "cloud_provider": "AWS",
+    "account_id": "123456789012 (Prod)",
+    "role_name": "DevOps-Admin-Role",
+    "identity_type": "Role",
+    "service": "IAM",
+    "permission": "iam:* (Full Wildcard)",
+    "risk_level": "Critical",
+    "has_wildcard": true,
+    "is_dormant": false
+  },
+  {
+    "cloud_provider": "AWS",
+    "account_id": "123456789012 (Prod)",
+    "role_name": "DevOps-Admin-Role",
+    "identity_type": "Role",
+    "service": "EC2",
+    "permission": "ec2:* (Full Control)",
+    "risk_level": "High",
+    "has_wildcard": true,
+    "is_dormant": false
+  },
+  {
+    "cloud_provider": "AWS",
+    "account_id": "123456789012 (Prod)",
+    "role_name": "Legacy-Jenkins-Worker",
+    "identity_type": "User",
+    "service": "IAM",
+    "permission": "iam:PassRole",
+    "risk_level": "Critical",
+    "has_wildcard": false,
+    "is_dormant": true
+  },
+  {
+    "cloud_provider": "Azure",
+    "account_id": "sub-prod-001 (Azure Prod)",
+    "role_name": "GlobalAdministrator-SPN",
+    "identity_type": "ServicePrincipal",
+    "service": "Microsoft.Authorization",
+    "permission": "roleAssignments/write (*)",
+    "risk_level": "Critical",
+    "has_wildcard": true,
+    "is_dormant": false
+  },
+  {
+    "cloud_provider": "GCP",
+    "account_id": "corp-analytics-gcp",
+    "role_name": "OverPrivileged-Compute-SA",
+    "identity_type": "ServiceAccount",
+    "service": "RESOURCEMANAGER",
+    "permission": "resourcemanager.projects.setIamPolicy",
+    "risk_level": "Critical",
+    "has_wildcard": true,
+    "is_dormant": false
+  }
+]

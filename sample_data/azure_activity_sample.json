@@ -1,0 +1,36 @@
+[
+  {
+    "eventTimestamp": "2026-10-15T09:15:00Z",
+    "caller": "claire.martin@company.com",
+    "operationName": {
+      "value": "Microsoft.Compute/virtualMachines/read"
+    },
+    "callerIpAddress": "198.51.100.89",
+    "countryCode": "CAN",
+    "status": {
+      "value": "Succeeded"
+    },
+    "resourceId": "/subscriptions/sub-01/resourceGroups/rg-prod/providers/Microsoft.Compute/virtualMachines/vm-web",
+    "claims": {
+      "name": "Claire Martin",
+      "amr": ["mfa"]
+    }
+  },
+  {
+    "eventTimestamp": "2026-10-15T23:45:00Z",
+    "caller": "malicious-spn@azure.internal",
+    "operationName": {
+      "value": "Microsoft.Authorization/roleAssignments/write"
+    },
+    "callerIpAddress": "114.119.130.2",
+    "countryCode": "CHN",
+    "status": {
+      "value": "Succeeded"
+    },
+    "resourceId": "/subscriptions/sub-01/providers/Microsoft.Authorization/roleAssignments/ra-admin-role",
+    "claims": {
+      "appId": "00000000-0000-0000-0000-000000000000",
+      "amr": ["pwd"]
+    }
+  }
+]
